@@ -1,20 +1,19 @@
 import React from 'react';
-import Person from './Person';
+import People from './people';
+// import './PeopList.css';
 
-export const PeopleList = props => {
+export const PeopleList = (props) => {
     return (
-        <div classname="People-Map">
-        {props.people.map((person =>{
+        <div className="People-Map">
+        {props.people.map((people => {
             return (
                 <div>
-                    <div>{person.first_name}</div>
-                    <div> {person.last_name}</div>
-                    <div>{person.email}</div>
+                    <div>{people.first_name}</div>
+                    <div>{people.last_name}</div>
+                    <div>{people.email}</div>
                 </div>
-            )
-        })
-        )
-        }
+                )
+            }))}
         </div>
     )
 };

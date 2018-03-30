@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { people } from './people.js';
-import {PeopleList} from './PeopleList';
+import { PeopleList } from './PeopleList';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    People : []  
+    People : [],  
     };
   }
 
   componentDidMount() {
-    this.setState.People({People: people});
+    this.setState({People: people});
   }
 
   render() {
